@@ -31,8 +31,8 @@ function Weather() {
   };
 
   const search = async (city) => {
-    if (city === "") {
-      alert("Enter the city you want to search");
+    if (!city) {
+      alert("Please enter a city name.");
       return;
     }
 
@@ -42,12 +42,12 @@ function Weather() {
       }`;
       const response = await fetch(url);
       const data = await response.json();
+
       if (!response.ok) {
         alert(data.message);
         return;
       }
 
-      console.log(data);
       const icon = AllIcones[data.weather[0].icon] || clear_icon;
       setWeatherData({
         humidity: data.main.humidity,

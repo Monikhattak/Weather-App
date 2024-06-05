@@ -47,7 +47,6 @@
   top: 0;
   left: 0;
   pointer-events: none;
-  z-index: 2; /* Ensure it's behind weather content but in front of stars */
 }
 
 .rain:before,
@@ -90,4 +89,8 @@
   100% {
     background: linear-gradient(45deg, #2f4680, #500ae4);
   }
+}
+.weather-container {
+  position: relative;
+  z-index: 3; /* Ensure it's above stars and rain */
 }
