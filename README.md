@@ -1,5 +1,9 @@
 # React + Vite
-
+# WAETHER FATCH API
+# ADD YOUR API ON THE .ENV FILE 
+# Download the complete App then 
+# NPM Install 
+# NPM RUN DEV
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
